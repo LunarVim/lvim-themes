@@ -13,6 +13,7 @@ call setup anywhere in your config.lua:
 ```lua
 require("lvim-themes").setup {
   theme = "flat",
+  telescope = { set_highlights = true }
 }
 ```
 
@@ -30,8 +31,9 @@ local flat = {
 <details>
 <summary>flat</summary>
 
-- lsp
 - telescope
-- whichkey
+  
+  ![image](https://user-images.githubusercontent.com/110467150/208163876-8fb9a377-dab8-4abc-bd72-649507ac6625.png)
+  ![image](https://user-images.githubusercontent.com/110467150/208164060-78c77efb-85fa-42a8-8f21-a72518b5f1b7.png)
 
 </details>
