@@ -13,7 +13,7 @@ call setup anywhere in your config.lua:
 ```lua
 require("lvim-themes").setup {
   theme = "flat",
-  telescope = { set_highlights = true }
+  telescope = { set_highlights = true },
 }
 ```
 
@@ -32,8 +32,9 @@ local flat = {
 <summary>flat</summary>
 
 - telescope
-  
-  ![image](https://user-images.githubusercontent.com/110467150/208163876-8fb9a377-dab8-4abc-bd72-649507ac6625.png)
-  ![image](https://user-images.githubusercontent.com/110467150/208164060-78c77efb-85fa-42a8-8f21-a72518b5f1b7.png)
+
+| horizontal                                                                                                       | vertical                                                                                                         |
+| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| ![image](https://user-images.githubusercontent.com/110467150/208234877-3732c2ea-4dd8-458f-9606-f4ae8074df76.png) | ![image](https://user-images.githubusercontent.com/110467150/208234896-50bdf098-c051-4fe8-93be-cd8a49042da1.png) |
 
 </details>

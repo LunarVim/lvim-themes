@@ -5,8 +5,11 @@ local M = {}
 function M.telescope(config)
   lvim.builtin.telescope.defaults.layout_strategy = "flex"
   lvim.builtin.telescope.defaults.selection_caret = "❯ "
-  lvim.builtin.telescope.defaults.borderchars = { "🬂", "▐", "🬭", "▌", "🬕", "🬨", "🬷", "🬲" } --{ "▔", "▕", "▁", "▏", "🭽", "🭾", "🭿", "🭼" }
+  lvim.builtin.telescope.defaults.borderchars = { "🬂", "▐", "🬭", "▌", "🬕", "🬨", "🬷", "🬲" }
 
+  lvim.builtin.telescope.theme = "center"
+  lvim.builtin.telescope.defaults.results_title = false
+  lvim.builtin.telescope.defaults.sorting_strategy = "ascending"
   lvim.builtin.telescope.defaults.layout_config = {
     prompt_position = "top",
     height = 0.85,
@@ -36,6 +39,7 @@ function M.telescope(config)
         results = utils.get_hl_by_name("TelescopeResultsNormal", "TelescopePrompt", "NormalFloat"),
         preview = utils.get_hl_by_name("TelescopePreviewNormal", "TelescopePrompt", "NormalFloat"),
         title = utils.get_hl_by_name "Title",
+        character = utils.get_hl_by_name "Character",
         keyword = utils.get_hl_by_name "Keyword",
       }
 
@@ -44,7 +48,7 @@ function M.telescope(config)
       utils.set_hl_fg_bg("TelescopePreviewBorder", c.normal.bg, c.preview.bg)
 
       utils.set_hl_fg_bg("TelescopePromptTitle", c.prompt.bg, c.keyword.fg)
-      utils.set_hl_fg_bg("TelescopeResultsTitle", c.results.bg, c.results.bg)
+      utils.set_hl_fg_bg("TelescopeResultsTitle", c.results.bg, c.character.bg)
       utils.set_hl_fg_bg("TelescopePreviewTitle", c.preview.bg, c.title.fg)
     end)
   end
