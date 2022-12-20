@@ -1,3 +1,7 @@
+# Work in progress
+
+The plugin is working but expect breaking changes
+
 # Installation & usage
 
 install:
